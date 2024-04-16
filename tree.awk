@@ -346,7 +346,7 @@ BEGIN {
 
             ok = arr_cmp(a1, a2)
             TEST(ok, "Fuzz order " num ": " order2str(how))
-            if (ok) {
+            if (!ok) {
                 tree_draw(tree, root)
                 printf "iter: "; arr_print(a1)
                 printf "rec: "; arr_print(a2)
