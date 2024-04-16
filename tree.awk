@@ -349,7 +349,7 @@ BEGIN {
             if (!ok) {
                 tree_draw(tree, root)
                 printf "iter: "; arr_print(a1)
-                printf "rec: "; arr_print(a2)
+                printf " rec: "; arr_print(a2)
                 exit(1)
             }
         }
