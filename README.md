@@ -40,6 +40,9 @@ Build and show BST (the root is on the left, leafs are on the right, * is nullpt
             42
                  *
 
+IN_ORDER: 42 43 44 45 46 47 48 49 50 51 
+PRE_ORDER: 46 43 42 44 45 49 47 48 50 51 
+POST_ORDER: 42 45 44 43 48 47 51 50 49 46
 ``` 
 
 

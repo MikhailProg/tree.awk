@@ -367,5 +367,12 @@ BEGIN {
     tree_new(tree)
     root = tree_build(tree, root, arr, N)
     tree_draw(tree, root, 0)
+    print ""
+
+    for (how = TREE_IN_ORDER; how <= TREE_POST_ORDER; how++) {
+        arr_reset(arr)
+        tree_collect(tree, root, how, arr)
+        printf order2str(how) ": "; arr_print(arr)
+    }
 }
 
