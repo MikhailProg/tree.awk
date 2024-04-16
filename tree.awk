@@ -326,7 +326,7 @@ BEGIN {
     for (i = 0; i < TESTS; i++) {
         tree_new(tree)
         root = 0
-        # insert random values, it's not BST
+        # insert random values
         root = tree_insert(tree, root, int(1000 * rand()))
 
         for (j = 0; j < NODES; j++)
@@ -346,7 +346,7 @@ BEGIN {
 
             ok = arr_cmp(a1, a2)
             TEST(ok, "Fuzz order " num ": " order2str(how))
-            if (!ok) {
+            if (ok) {
                 tree_draw(tree, root)
                 printf "iter: "; arr_print(a1)
                 printf "rec: "; arr_print(a2)
