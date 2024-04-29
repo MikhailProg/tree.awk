@@ -1,5 +1,5 @@
 
-Tree in awk. The implementation uses awk multidimensional array as a C-like structure.
+Tree in awk. The implementation uses awk multidimensional array as if it's C structure.
 
 With such approach it's possible to model any dynamic data structures e.g lists, binary search tries (balanced and not balanced).
 
